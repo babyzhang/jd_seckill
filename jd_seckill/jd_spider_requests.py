@@ -454,7 +454,8 @@ class JdSeckill(object):
             try:
                 self.request_seckill_url()
                 while self.running_flag:
-                    self.request_seckill_checkout_page()
+                  #  这个方法可以不需要
+                  #  self.request_seckill_checkout_page()
                     self.submit_seckill_order()
                     self.seckill_canstill_running()
             except Exception as e:
